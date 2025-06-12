@@ -55,7 +55,7 @@ const Navbar = () => {
             <Link 
               to="/about" 
               className={`font-medium transition-colors ${
-                isActive('/pages') 
+                isActive('/about') 
                   ? 'text-blue-600' 
                   : 'text-gray-700 hover:text-blue-600'
               }`}
@@ -65,7 +65,7 @@ const Navbar = () => {
             <Link 
               to="/contact" 
               className={`font-medium transition-colors ${
-                isActive('/pages') 
+                isActive('/contact') 
                   ? 'text-blue-600' 
                   : 'text-gray-700 hover:text-blue-600'
               }`}
@@ -144,15 +144,26 @@ const Navbar = () => {
                 Features
               </Link>
               <Link 
-                to="/pages" 
+                to="/about" 
                 className={`font-medium ${
-                  isActive('/pages') 
+                  isActive('/about') 
                     ? 'text-blue-600' 
                     : 'text-gray-700 hover:text-blue-600'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Pages
+                About Us
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`font-medium ${
+                  isActive('/contact') 
+                    ? 'text-blue-600' 
+                    : 'text-gray-700 hover:text-blue-600'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact Us
               </Link>
               <div className="flex flex-col space-y-2 pt-3 border-t">
                 <Link 
