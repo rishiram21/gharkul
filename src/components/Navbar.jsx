@@ -53,15 +53,26 @@ const Navbar = () => {
               Features
             </Link>
             <Link 
-              to="/pages" 
+              to="/about" 
               className={`font-medium transition-colors ${
                 isActive('/pages') 
                   ? 'text-blue-600' 
                   : 'text-gray-700 hover:text-blue-600'
               }`}
             >
-              Pages
+              About Us
             </Link>
+            <Link 
+              to="/contact" 
+              className={`font-medium transition-colors ${
+                isActive('/pages') 
+                  ? 'text-blue-600' 
+                  : 'text-gray-700 hover:text-blue-600'
+              }`}
+            >
+              Contact Us
+            </Link>
+            
           </div>
 
           {/* Action Buttons */}

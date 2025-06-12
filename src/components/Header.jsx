@@ -5,16 +5,16 @@ const Header = () => {
   return (
     <header className="bg-gray-50 border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-3">
+        <div className="flex flex-col sm:flex-row justify-between items-center py-3 space-y-3 sm:space-y-0">
           {/* Contact Info */}
-          <div className="flex items-center space-x-6 text-sm text-gray-600">
+          <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-600">
             <div className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 01234 56789</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
-              <span>info@renteasy.com</span>
+              <span>gharkul@gmail.com</span>
             </div>
           </div>
 
