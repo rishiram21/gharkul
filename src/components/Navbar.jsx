@@ -85,11 +85,18 @@ const Navbar = () => {
               <span>Sign In</span>
             </Link>
             <Link 
-              to="/add-property" 
+              to="/postproperty" 
               className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2"
             >
               <Plus className="h-4 w-4" />
-              <span>Add Property</span>
+              <span>Post Property</span>
+            </Link>
+            <Link 
+              to="/postrequirement" 
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2"
+            >
+              <Plus className="h-4 w-4" />
+              <span>Post Requirement</span>
             </Link>
           </div>
 
@@ -175,12 +182,20 @@ const Navbar = () => {
                   <span>Sign In</span>
                 </Link>
                 <Link 
-                  to="/add-property" 
+                  to="/postproperty" 
                   className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2 w-fit"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <Plus className="h-4 w-4" />
-                  <span>Add Property</span>
+                  <span>Post Property</span>
+                </Link>
+                <Link 
+                  to="/postrequirement" 
+                  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2 w-fit"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <Plus className="h-4 w-4" />
+                  <span>Post Requirement</span>
                 </Link>
               </div>
             </div>

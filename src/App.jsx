@@ -7,10 +7,13 @@ import Listing from './pages/Listings';
 import Features from './pages/Features';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
-import Addproperty from './pages/Addproperty';
+import Addproperty from './pages/Postproperty';
 import HomePage from './pages/HomePage';
 import Aboutus from './pages/Aboutus';
 import Contactus from './pages/Contactus';
+import Postproperty from './pages/Postproperty';
+import Propertydetails from './subpages/Propertydetails';
+import Postrequirement from './pages/Postrequirement';
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
         <Navbar />
         <main className="min-h-screen">
           <Routes>
+            {/* Main Pages */}
             <Route path="/" element={<HomePage />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/listing" element={<Listing />} />
@@ -28,7 +32,14 @@ function App() {
             <Route path="/contact" element={<Contactus />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/add-property" element={<Addproperty />} />
+            <Route path="/postproperty" element={<Postproperty />} />
+            <Route path="/postrequirement" element={<Postrequirement />} />
+
+
+            {/* Sub-Pages */}
+            <Route path="/property/:id" element={<Propertydetails />} />
+
+
           </Routes>
         </main>
         <Footer />

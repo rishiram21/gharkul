@@ -10,29 +10,32 @@ const Header = () => {
           <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-600">
             <div className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
-              <span>+91 01234 56789</span>
+              <span>+91 9632748927</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Mail className="h-4 w-4" />
-              <span>gharkul@gmail.com</span>
-            </div>
-          </div>
+            <div className="flex flex-wrap items-center justify-between space-y-2 sm:space-y-0 sm:flex-nowrap sm:space-x-4">
+  {/* Email Section */}
+  <div className="flex items-center space-x-2">
+    <Mail className="h-4 w-4" />
+    <span className="text-sm">gharkul@gmail.com</span>
+  </div>
 
-          {/* Social Links */}
-          <div className="flex items-center space-x-4">
-            <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
-              <Facebook className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-              <Twitter className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-pink-600 transition-colors">
-              <Instagram className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-blue-700 transition-colors">
-              <Linkedin className="h-5 w-5" />
-            </a>
-          </div>
+  {/* Social Links */}
+  <div className="flex items-center space-x-4 px-10">
+    <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
+      <Facebook className="h-5 w-5" />
+    </a>
+    <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+      <Twitter className="h-5 w-5" />
+    </a>
+    <a href="#" className="text-gray-400 hover:text-pink-600 transition-colors">
+      <Instagram className="h-5 w-5" />
+    </a>
+    <a href="#" className="text-gray-400 hover:text-blue-700 transition-colors">
+      <Linkedin className="h-5 w-5" />
+    </a>
+  </div>
+</div>
+</div>
         </div>
       </div>
     </header>

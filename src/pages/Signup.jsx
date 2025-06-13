@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Shield, Eye, EyeOff, User, CheckCircle, UserPlus, Building } from 'lucide-react';
 
 const Signup = () => {
@@ -315,14 +316,14 @@ const Signup = () => {
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <Phone className="w-5 h-5 text-white/60" />
-                  <span className="ml-2 text-white/60 text-sm">+91</span>
+                  <span className="ml-2 text-white/60 text-m">+91</span>
                 </div>
                 <input
                   type="tel"
                   value={formData.phoneNumber}
                   onChange={(e) => handleInputChange('phoneNumber', e.target.value)}
                   placeholder="Enter 10-digit mobile number"
-                  className={`w-full pl-16 pr-4 py-3 bg-white/10 border rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all ${
+                  className={`w-full pl-20 pr-4 py-3 bg-white/10 border rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all ${
                     errors.phoneNumber ? 'border-red-400' : 'border-white/30'
                   }`}
                 />
@@ -556,9 +557,9 @@ const Signup = () => {
           {/* Sign In Link */}
           <p className="mt-8 text-center text-sm text-white/70">
             Already have an account?{' '}
-            <a href="/signin" className="font-medium text-indigo-400 hover:text-indigo-300 transition-colors">
+            <Link to="/signin" className="font-medium text-indigo-400 hover:text-indigo-300 transition-colors">
               Sign in here
-            </a>
+            </Link>
           </p>
         </div>
 

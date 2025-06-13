@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Shield, Eye, EyeOff, User, CheckCircle } from 'lucide-react';
 
 const Signin = () => {
@@ -166,14 +167,14 @@ const Signin = () => {
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <Phone className="w-5 h-5 text-white/60" />
-                  <span className="ml-2 text-white/60 text-sm">+91</span>
+                  <span className="ml-2 text-white/60 text-m">+91</span>
                 </div>
                 <input
                   type="tel"
                   value={phoneNumber}
                   onChange={handlePhoneChange}
                   placeholder="Enter 10-digit mobile number"
-                  className={`w-full pl-16 pr-4 py-3 bg-white/10 border rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all ${
+                  className={`w-full pl-20 pr-4 py-3 bg-white/10 border rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all ${
                     errors.phone ? 'border-red-400' : 'border-white/30'
                   }`}
                   disabled={isOtpSent}
@@ -282,7 +283,7 @@ const Signin = () => {
           </div>
 
           {/* Divider */}
-          <div className="relative my-8">
+          {/* <div className="relative my-8">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-white/20"></div>
             </div>
@@ -291,17 +292,17 @@ const Signin = () => {
                 Or continue with
               </span>
             </div>
-          </div>
+          </div> */}
 
           {/* Social Login */}
-          <div className="space-y-3">
+          {/* <div className="space-y-3">
             <button
               type="button"
               className="w-full flex items-center justify-center px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white hover:bg-white/20 transition-all transform hover:scale-105"
             >
               <img className="h-5 w-5" src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google logo"/>
               <span className="ml-3 font-medium">Continue with Google</span>
-            </button>
+            </button> */}
             {/* <button
               type="button"
               className="w-full flex items-center justify-center px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white hover:bg-white/20 transition-all transform hover:scale-105"
@@ -309,14 +310,14 @@ const Signin = () => {
               <img className="h-5 w-5" src="https://www.svgrepo.com/show/303139/apple-logo.svg" alt="Apple logo"/>
               <span className="ml-3 font-medium">Continue with Apple</span>
             </button> */}
-          </div>
+          {/* </div> */}
 
           {/* Sign Up Link */}
           <p className="mt-8 text-center text-sm text-white/70">
             Don't have an account?{' '}
-            <a href="/signup" className="font-medium text-indigo-400 hover:text-indigo-300 transition-colors">
+            <Link to="/signup" className="font-medium text-indigo-400 hover:text-indigo-300 transition-colors">
               Sign up here
-            </a>
+            </Link>
           </p>
         </div>
 
