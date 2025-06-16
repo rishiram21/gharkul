@@ -53,6 +53,16 @@ const Navbar = () => {
               Features
             </Link>
             <Link 
+              to="/sub" 
+              className={`font-medium transition-colors ${
+                isActive('/sub') 
+                  ? 'text-blue-600' 
+                  : 'text-gray-700 hover:text-blue-600'
+              }`}
+            >
+              Subscription
+            </Link>
+            <Link 
               to="/about" 
               className={`font-medium transition-colors ${
                 isActive('/about') 
@@ -149,6 +159,17 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
+              </Link>
+              <Link 
+                to="/sub" 
+                className={`font-medium ${
+                  isActive('/sub') 
+                    ? 'text-blue-600' 
+                    : 'text-gray-700 hover:text-blue-600'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Subscription
               </Link>
               <Link 
                 to="/about" 

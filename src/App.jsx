@@ -14,6 +14,7 @@ import Contactus from './pages/Contactus';
 import Postproperty from './pages/Postproperty';
 import Propertydetails from './subpages/Propertydetails';
 import Postrequirement from './pages/Postrequirement';
+import Subscription from './pages/Subscription';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/listing" element={<Listing />} />
             <Route path="/features" element={<Features />} />
+            <Route path="/sub" element={<Subscription />} />
             <Route path="/about" element={<Aboutus />} />
             <Route path="/contact" element={<Contactus />} />
             <Route path="/signin" element={<Signin />} />
